@@ -1,4 +1,4 @@
-name: pep8
+name: Django workflow
 
 on:
   push:
