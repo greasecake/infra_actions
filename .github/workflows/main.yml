@@ -63,7 +63,7 @@ jobs:
           key: ${{ secrets.PRACTICUM_SSH_KEY }}
           script: |
             sudo docker pull kv1o/practicum-django
-            sudo docker stop ${docker ps -aq}
+            sudo docker stop ${docker ps -a -q}
             sudo docker run --rm -d -p 5000:5000 kv1o/practicum-django
 
   success_message:
