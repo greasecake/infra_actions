@@ -52,7 +52,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build_push_docker_hub
+#    needs: build_push_docker_hub
     steps:
       - name: Connect to server
         uses: appleboy/ssh-action@master
